@@ -1,14 +1,8 @@
 // creating Event Listner on Click of Button to get the age from user //
-var eventAge = document.getElementById("age");
-eventAge.addEventListener('click',CheckCriteria1,false);
+var eventAge = document.getElementById("check");
+eventAge.addEventListener('click',CheckCriteria,false);
 
-// creating Event Listner on Click of Button to get the Height from user //
-var eventHeight= document.getElementById("height");
-eventHeight.addEventListener('click',CheckCriteria2,false);
 
-// creating Event Listner on Click of Button to get the Weight from user //
-var eventWeight = document.getElementById("weight");
-eventWeight.addEventListener('click',CheckCriteria,false);
 
 
 function CheckCriteria()
@@ -30,12 +24,3 @@ function CheckCriteria()
     }
 }
 
-function CheckCriteria1()
-{
-    
-}
-
-function CheckCriteria2()
-{
-    
-}
