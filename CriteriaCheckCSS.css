@@ -1,0 +1,48 @@
+@media (min-width: 650px){
+.container {
+    width: 50%;
+}
+}
+
+.container
+{
+    margin-top: 3%;
+    border-style: solid;
+    border-width: thin;
+}
+
+.inputform1
+{
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.inputform2
+{
+    margin-bottom: 30px;
+}
+
+.inputform3
+{
+    margin-bottom: 30px;
+}
+
+.button1
+{
+    margin-bottom: 20px
+}
+
+.inp1
+{
+    margin-left: 92px;
+}
+
+.inp2
+{
+    margin-left: 74px;
+}
+
+.inp3
+{
+    margin-left: 75px;
+}

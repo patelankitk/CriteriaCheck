@@ -19,45 +19,123 @@ Criteria to meet
 
 Expected Output
 
-After completing the form the prosepctive customer will receive a notification whether they have satisfactorily met the criteria and can proceed to booking their course or whether they have not met the criteria. If not the customer will receive feedback to what criteria they have failed.-->
+After completing the form the prosepctive customer will receive a notification whether they have satisfactorily met the criteria and can proceed to booking their course or whether they have not met the criteria.If not the customer will receive feedback to what criteria they have failed.-->
 
 <!DOCTYPE html>
 <html>
     
-<head>
-    
+<head>   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="CriteriaCheckCSS.css">    
 </head>
     
 <body>
     
+    <div class="container">
+
+    <!------ 1st Row - Description ---->
+    <div class="row">
+    <div class="col-sm-12">
+     <!----Description---->
     <H1>Criteria Check.</H1>
-    
+    <!----Description---->
     <p>Please complete the below simple criteria check form. </p>
-    
-    <form>
-    1. Please Enter your Age    <input type="number" id="age" placeholder="Your Age.">
+    </div>
+    </div>
+    <!------End of 1st Row ----------->
+        
+        
+        
+    <!------ 2nd Row - Inout Age ---->
+    <div class="row">
+    <div class="col-sm-12">
+    <!----Input form for user to input age---->
+    <form class="inputform1">
+    1. Please Enter your Age    <input class="inp1" type="number" id="age" placeholder="Your Age.">
     </form>
-    
-    <form>
-    2. Please Enter your Weight <input type="number" id="weight" placeholder="Your Weight(kg).">
+    </div>
+    </div>
+    <!------End of 2nd Row ----------->
+        
+        
+
+    <!------ 3rd Row - Inout Weight ---->
+    <div class="row">
+    <div class="col-sm-12">
+    <!----Input form for user to input weight---->
+    <form class="inputform2">
+    2. Please Enter your Weight <input class="inp2" type="number" id="weight" placeholder="Your Weight(kg).">
     </form>
-    
-    <form>
-    3. Please Enter your Height <input type="number" id="height" placeholder="Your Height(cm).">
+    </div>
+    </div>
+    <!------End of 3rd Row ----------->
+        
+
+        
+    <!------ 4th Row - Input Height ---->
+    <div class="row">
+    <div class="col-sm-12">
+    <!----Input form for user to input height---->
+    <form class="inputform3">
+    3. Please Enter your Height <input class="inp3" type="number" id="height" placeholder="Your Height(cm).">
     </form>
-    
-    <div><button id="check">Check Criteria</button></div>
-    
+    </div>
+    </div>
+    <!------End of 4th Row ----------->
+
+
+    <!------ 5th Row - Button ---->
+    <div class="row">
+    <div class="col-sm-12">
+    <!----Button to check criteria on click---->
+    <div><button class="button1" id="check">Check Criteria</button></div>
+    </div>
+    </div>
+    <!------End of 5th Row ----------->
+        
+        
+        
+    <!------ 6th Row - Diaplay Age Check---->
+    <div class="row">
+    <div class="col-sm-12">
+    <!----div for displaying check result of age---->
     <div id="criteriacheckage"></div>
+    </div>
+    </div>
+    <!------End of 6th Row ----------->
+        
+        
+
+        
+    <!------ 7th Row - Display Weight Check ---->
+    <div class="row">
+    <div class="col-sm-12">
+    <!----div for displaying check result of weight---->
     <div id="criteriacheckweight"></div>
-
+    </div>
+    </div>
+    <!------End of 7th Row ----------->   
+        
+        
+    <!------ 8th Row - Display Height Check ---->
+    <div class="row">
+    <div class="col-sm-12">
+    <!----div for displaying check result of weight---->
     <div id="criteriacheckheight"></div>
-
+    </div>
+    </div>
+    <!------End of 7th Row ----------->     
+        
+        
+    </div>  
+        
+    
     <script src="CriteriaCheckJS.js"></script>
     
 </body>
-
-
-
 
 </html>

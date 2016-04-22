@@ -18,30 +18,31 @@ function CheckCriteria()
     
     
     // if statement to check if all the criteria is correct //
-    if ((UserAge < 26) && (UserWeight > 50 && UserWeight < 90 )&& (UserHeight > 150 && UserHeight < 190))
+    if (UserAge < 26 && (UserWeight > 50 && UserWeight < 90 ) && (UserHeight > 150 && UserHeight < 190))
         {
             // Display the result if all the criteria is satiesfied //
-            document.getElementById("criteriacheck").innerHTML ="<li>"+ "You have satisfactorily met the criteria and you can proceed to booking             this course."+"</li>";
+            document.getElementById("criteriacheckall").innerHTML ="<li>"+ "You have satisfactorily met the criteria and you can proceed and book             this course."+"</li>";
         }
     
     //  else statement to check whih criteria is not satisfied //
     else
     {
               // is statement to display the result if age criteria is not satisfied.
-        if(UserAge>=26)
+        if(UserAge >= 26)
             {
                 document.getElementById("criteriacheckage").innerHTML ="<li>"+ "Sorry you do not satisfy our minimum required criteria, your Age                 exceeds out criteria of Maximum 25, your age is "+UserAge+"."+"</li>"+"<br>";           
             }
-        // else if statement to display result if weght criteria is not met //
-        else if (UserWeight <50 || UserWeight >90)
+        // if statement to display result if weght criteria is not met //
+        if (UserWeight < 50 || UserWeight > 90)
             {
                 document.getElementById("criteriacheckweight").innerHTML ="<li>"+ "Sorry you do not satisfy our minimum required criteria,your                   Weight is outside our range of 50 to 90 kg, your weight is "+UserWeight+"."+"</li>"+"<br>";
             }
-        // else if statement to display result if height criteria is not met //
-        else if (UserHeight <150 || UserHeight >190)
+        // if statement to display result if height criteria is not met //
+        if (UserHeight < 150 || UserHeight > 190)
             {
                 document.getElementById("criteriacheckheight").innerHTML ="<li>"+"You do not satisfy our criteria, your Height is outside our                     range of 150 to 190 cm, your height is "+UserHeight+"."+"</li>"+"<br>";
             }
+        
     }
 }
 
