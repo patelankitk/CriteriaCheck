@@ -54,80 +54,64 @@ After completing the form the prosepctive customer will receive a notification w
     <div class="row">
     <div class="col-sm-12">
     <!----Input form for user to input age---->
-    <form class="inputform1">
-    <p>1. Please  Enter  your  Age<input class="inp1" type="number" id="age" placeholder="Your Age." required></p>
+    <form>
+    
+    <p class="inputform1">1.Please Enter your Age<input class="inp1" type="number" id="age" placeholder="Your Age." required></p>
+    <p class="inputform2">2.Please Enter your Weight<input class="inp2" type="number" id="weight" placeholder="Your Weight." required></p>
+    <p class="inputform3">3.Please Enter your Height<input class="inp3" type="number" id="height" placeholder="Your Height" required></p>
+    
+    <button type="button" id="check" class ="btn btn-primary" name="button1" >Check Criteria</button>      
+    <button type="button" id="reset" class ="btn btn-primary" >Reset</button>
+
     </form>
+    
     </div>
-    </div>   
-        
+    </div>
 
-    <!------ 3rd Row - Inout Weight ---->
-    <div class="row">
-    <div class="col-sm-12">
-    <!----Input form for user to input weight---->
-    <form class="inputform2">
-    2. Please Enter your Weight <input class="inp2" type="number" id="weight" placeholder="Your Weight(kg).">
-    </form>
-    </div>
-    </div>
-    <!------End of 3rd Row ----------->
-        
-
-        
-    <!------ 4th Row - Input Height ---->
-    <div class="row">
-    <div class="col-sm-12">
-    <!----Input form for user to input height---->
-    <form class="inputform3">
-    3. Please Enter your Height <input class="inp3" type="number" id="height" placeholder="Your Height(cm).">
-    </form>
-    </div>
-    </div>
-    <!------End of 4th Row ----------->
-
-
-    <!------ 5th Row - Button ---->
-    <div class="row">
-    <div class="col-sm-12">
-    <!----Button to check criteria on click---->
-        <div><button type = "submit" id="check" class ="btn btn-primary">Check Criteria</button></div>
-    </div>
-    </div>
-        </form>
-    <!------End of 5th Row ----------->
+    <!------End of 2nd Row ----------->
         
         
         
-    <!------ 6th Row - Diaplay Age Check---->
+    <!------ 3rd Row - Diaplay Age Check---->
     <div class="row">
     <div class="col-sm-12">
     <!----div for displaying check result of age---->
     <div id="criteriacheckage"></div>
     </div>
     </div>
-    <!------End of 6th Row ----------->
+    <!------End of 3rd Row ----------->
         
         
 
         
-    <!------ 7th Row - Display Weight Check ---->
+    <!------ 4th Row - Display Weight Check ---->
     <div class="row">
     <div class="col-sm-12">
     <!----div for displaying check result of weight---->
     <div id="criteriacheckweight"></div>
     </div>
     </div>
-    <!------End of 7th Row ----------->   
+    <!------End of 4th Row ----------->   
         
         
-    <!------ 8th Row - Display Height Check ---->
+    <!------ 5th Row - Display Height Check ---->
     <div class="row">
     <div class="col-sm-12">
     <!----div for displaying check result of weight---->
     <div id="criteriacheckheight"></div>
     </div>
     </div>
-    <!------End of 7th Row ----------->     
+    <!------End of 5th Row ----------->    
+    
+    
+    <!------ 6th Row - Display Height Check ---->
+    <div class="row">
+    <div class="col-sm-12">
+    <!----div for displaying check result of weight---->
+    <div class="result" id="criteriacheckall"></div>
+    </div>
+    </div>
+    <!------End of 6th Row ----------->    
         
         
     </div>  
@@ -138,3 +122,4 @@ After completing the form the prosepctive customer will receive a notification w
 </body>
 
 </html>
+

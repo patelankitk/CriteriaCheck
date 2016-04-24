@@ -2,8 +2,13 @@
 var eventAge = document.getElementById("check");
 eventAge.addEventListener('click',CheckCriteria,false);
 
+// creating Event Listner on Click of Button  //
+var eventAge = document.getElementById("reset");
+eventAge.addEventListener('click',reset,false);
+
 
 // Function to assess the criteria //
+ 
 
 function CheckCriteria()
 {
@@ -27,6 +32,13 @@ function CheckCriteria()
     //  else statement to check whih criteria is not satisfied //
     else
     {
+         if( UserAge == "" || UserWeight == "" || UserHeight == "")
+            {
+               document.getElementById("criteriacheckall").innerHTML ="<li>"+"Please enter the details as requested to check the criteria."+"</li>"+"<br>";  
+            }
+        
+        else
+            {
               // is statement to display the result if age criteria is not satisfied.
         if(UserAge >= 26)
             {
@@ -42,7 +54,17 @@ function CheckCriteria()
             {
                 document.getElementById("criteriacheckheight").innerHTML ="<li>"+"You do not satisfy our criteria, your Height is outside our                     range of 150 to 190 cm, your height is "+UserHeight+"."+"</li>"+"<br>";
             }
+       if( UserAge == "" || UserWeight == "" || UserHeight == "")
+            {
+               document.getElementById("criteriacheckall").innerHTML ="<li>"+"Please enter the details as requested to check the criteria."+"</li>"+"<br>";  
+            }
+            }
         
     }
+}
+
+function reset()
+{
+    window.location.reload();
 }
 
