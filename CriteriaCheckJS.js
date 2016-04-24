@@ -46,11 +46,3 @@ function CheckCriteria()
     }
 }
 
-function myFunction() 
-{
-    var inpObj = document.getElementById("age");
-    if (inpObj.checkValidity() == false) {
-        document.getElementById("demo").innerHTML = inpObj.validationMessage;
-    }
-}
-

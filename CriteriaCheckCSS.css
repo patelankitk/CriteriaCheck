@@ -1,4 +1,4 @@
-@media (min-width: 650px){
+@media (min-width: 700px){
 .container {
     width: 50%;
 }
@@ -15,16 +15,19 @@
 {
     margin-bottom: 30px;
     margin-top: 20px;
+    margin-right: 10px;
 }
 
 .inputform2
 {
     margin-bottom: 30px;
+    margin-right: 10px;
 }
 
 .inputform3
 {
     margin-bottom: 30px;
+    margin-right: 10px;
 }
 
 .button1
@@ -34,15 +37,15 @@
 
 .inp1
 {
-    margin-left: 92px;
+    margin-left: 15%;
 }
 
 .inp2
 {
-    margin-left: 74px;
+    margin-left: 11.5%;
 }
 
 .inp3
 {
-    margin-left: 75px;
+    margin-left: 12%;
 }
